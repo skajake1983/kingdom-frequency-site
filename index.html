@@ -57,6 +57,14 @@
       text-decoration: none;
       font-size: 1.2rem;
     }
+    .contact {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 28px 32px 36px;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.35) inset, 0 6px 22px rgba(0,0,0,.25);
+}
     footer {
       margin-top: 3rem;
       padding: 1.5rem;
@@ -95,23 +103,19 @@
   </section>
   <section>
    <h2>Contact Us</h2>
-    <form
-  action="https://formspree.io/f/xovlzvnl"
-  method="POST"
->
-  <label>
-    Email:
-    <input type="email" name="email">
-  </label>
-      <br>
-      <br>
-  <label>
-   Message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+  <section class="contact">
+  <h2>Contact Us</h2>
+
+  <form action="https://formspree.io/f/xovlzvnl" method="POST" accept-charset="UTF-8" class="contact-form">
+    <label for="email">Email:</label>
+    <input id="email" type="email" name="email" required autocomplete="email" maxlength="254" />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required maxlength="2000"></textarea>
+
+    <button type="submit" class="btn">Send</button>
+  </form>
+</section>
   </section>
   <footer>
     <a href="https://www.kingdomfrequency.studio" style="color: #f2f2f2";>&copy; 2025 Kingdom Frequency.</a>. All rights reserved. Produced with purpose. Inspired by faith.
